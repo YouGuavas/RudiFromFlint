@@ -1,7 +1,6 @@
 // routes.ts
 const routes = [
-	{ name: 'See', path: '/see' },
-	{ name: '', path: '/read' },
+	{ name: 'Cars', path: '/cars' },
 	{ name: 'Contact', path: '/contact' },
 ];
 

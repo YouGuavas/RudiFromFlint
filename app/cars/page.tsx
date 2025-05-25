@@ -11,21 +11,8 @@ import type { Metadata } from 'next';
 import styles from '../page.module.css';
 import { ProviderWrapper } from '../ThemeProviderWrapper';
 
-const nodes = [
-	{ id: 'You' },
-	{ id: 'Person A' },
-	{ id: 'Person B' },
-	{ id: 'Person A Friends' },
-	{ id: 'Person B Friends' },
-	{ id: 'Relatives' },
-	{ id: 'Employees' },
-	{ id: 'Coworkers' },
-	{ id: 'Idea A' },
-	{ id: 'Idea B' },
-];
-
 export const metadata: Metadata = {
-	title: 'Patripples | Visualizations',
+	title: 'Rudi | Cars',
 	description:
 		'See the visuals that drive the ripples behind Patripples! Envisioned by Patrick Yambrick.',
 };

@@ -6,8 +6,8 @@ import styles from '../page.module.css';
 import { ProviderWrapper } from '../ThemeProviderWrapper';
 
 export const metadata: Metadata = {
-	title: 'Patripples | Contact',
-	description: 'You can contact Pat by emailing pat@patripples.com',
+	title: 'Rudi | Contact',
+	description: 'You can contact Rudi by emailing pat@patripples.com',
 };
 export default function Home() {
 	return (
