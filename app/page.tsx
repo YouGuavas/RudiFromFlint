@@ -22,16 +22,15 @@ export default function Home() {
 					How to be a champion.
 				</h1>
 				<p className={`paragraph full left`}>
-					As with the concept, this is a living document. I am working on it as
-					I go along. You are welcome to come back to check for updates whenever
-					it pleases you.
+					You already are a champion, if you ask me. A champion deserves a
+					chariot fit for the finest.
 				</p>
 				<p className={`paragraph full left`}>
 					Have you ever tossed a handful of pebbles into a pond or a creek, and
 					watched the water ripple?
 				</p>{' '}
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					How to throw stones.
+					About Rudi.
 				</h2>
 				<p className={`paragraph full left`}>
 					Every action we take creates a vibration around us. You know this if
@@ -48,7 +47,7 @@ export default function Home() {
 					/>
 				</div>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					What is the wave.
+					What is a champion.
 				</h2>
 				<ul className={`no-deco flex column gap-small`}>
 					<li>

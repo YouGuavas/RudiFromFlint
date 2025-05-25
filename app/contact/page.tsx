@@ -23,11 +23,16 @@ export default function Home() {
 						pat@patripples.com
 					</Link>
 				</p>
-				<h2 className="lowercase style-1 thin">Want to know more about me?</h2>
+				<h2 className="uppercase style-2 thin font-large">
+					Want to know more about the dealership?
+				</h2>
 				<p className={`style-1`}>
 					Check out{' '}
-					<Link className={`no-deco style-1`} href="https://patdesigns.online/">
-						patdesigns.online
+					<Link
+						className={`no-deco style-1`}
+						href="https://www.wefinanceeveryone.com/"
+					>
+						https://www.wefinanceeveryone.com/
 					</Link>
 				</p>
 				<h2 className="lowercase style-1 thin">Want me to make you a site?</h2>
