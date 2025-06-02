@@ -22,40 +22,35 @@ export default function Home() {
 					How to be a champion.
 				</h1>
 				<p className={`paragraph full left`}>
-					You already are a champion, if you ask me. A champion deserves a
-					chariot fit for the finest.
+					You already are a champion, if you ask me. Everybody knows that a
+					champion deserves a chariot fit for a king.
 				</p>
-				<p className={`paragraph full left`}>
-					Have you ever tossed a handful of pebbles into a pond or a creek, and
-					watched the water ripple?
-				</p>{' '}
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					About Rudi.
 				</h2>
 				<p className={`paragraph full left`}>
-					Every action we take creates a vibration around us. You know this if
-					you have ever jumped into the air, and listened to the sound that your
-					feet made as they returned to the Earth.
+					Rudi is a walking smile - a champion of the sun - and wants you to be,
+					too. When you see Rudi smiling at you, you feel the warmth of a sunny
+					day shining onto you, and you&apos;ll want to share that warmth with
+					all around. What better way to get the word out than to ride in style?
 				</p>
-				<div className={`flex gap-medium`}>
-					<Image
-						id="fish_fear"
-						alt={`Hat which reads "Women want me, fish fear me."`}
-						height={333}
-						width={250}
-						src={fish.src}
-					/>
-				</div>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					What is a champion.
+					How to smile like a champion.
 				</h2>
+				<p className={`paragraph full left`}>
+					You can carry some of Rudi&apos;s sunlight with you by envisioning
+					yourself beaming bright as you step up out of your chariot, ready to
+					be champion.
+				</p>
+				<h2 className={`uppercase spaced style-1 thin font-large`}>
+					How to feel like a king.
+				</h2>
+				<p className={`paragraph full left`}>
+					Check Rudi out at Champion Auto Sales in , where all credit is
+					approved and everyone can find financing.
+				</p>
 				<ul className={`no-deco flex column gap-small`}>
-					<li>
-						Amplifying Nature - Healing old wounds. Let what would otherwise
-						fester breathe instead. I believe that this sort of action - a
-						healing one, done in harmony with what is - always leaves behind a
-						positive ripple.
-					</li>{' '}
+					<li></li>{' '}
 					<li>
 						Accelerating Empathy - Deep empathy - for each other, of course;
 						also for all living beings, and for the planet on which we all

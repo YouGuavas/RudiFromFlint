@@ -6,6 +6,9 @@ import { supabase } from '../api/lib/supabase';
 
 export default function EmailForm() {
 	const [email, setEmail] = useState('');
+	const [name, setName] = useState('');
+	const [phone, setPhone] = useState('');
+
 	const [status, setStatus] = useState<
 		'idle' | 'loading' | 'success' | 'error'
 	>('idle');
@@ -26,7 +29,7 @@ export default function EmailForm() {
 
 		const { error } = await supabase
 			.from('emails')
-			.insert([{ email, source: 'ripple-form' }]);
+			.insert([{ email, source: 'contact-form' }]);
 
 		if (error) {
 			setStatus('error');
@@ -45,6 +48,22 @@ export default function EmailForm() {
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 					placeholder="your@email.com"
+					className="py-1"
+					required
+				/>
+				<input
+					type="text"
+					value={name}
+					onChange={(e) => setName(e.target.value)}
+					placeholder="Your First and Last Name"
+					className="py-1"
+					required
+				/>
+				<input
+					type="phone"
+					value={phone}
+					onChange={(e) => setPhone(e.target.value)}
+					placeholder="(555) 555-1234"
 					className="py-1"
 					required
 				/>
