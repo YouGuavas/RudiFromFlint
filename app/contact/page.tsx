@@ -21,13 +21,22 @@ export default function Home() {
 				<h1 className="uppercase style-2 thin font-large">
 					Want to contact Rudi?
 				</h1>
-				<p className={`style-1 lowercase`}>
+				<p className={`style-1`}>
+					Call or Text Rudi:{' '}
+					<Link
+						className={`no-deco style-1 spaced lowercase`}
+						href="tel:+18103470910"
+					>
+						(810) 347-0910
+					</Link>
+				</p>
+				<p className={`style-1`}>
 					Email:{' '}
 					<Link
 						className={`no-deco style-1 spaced lowercase`}
 						href="mailto:pat@patripples.com"
 					>
-						pat@patripples.com
+						rudi@rudisemail.com
 					</Link>
 				</p>
 				<h2 className="uppercase style-2 thin font-large">

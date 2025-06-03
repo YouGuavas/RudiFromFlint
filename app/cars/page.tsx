@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import D3Graph from '../components/D3Graph';
-import Link from 'next/link';
 import routes from './routes';
 import categories from '../categories';
 import InteractiveList from '../components/InteractiveList';
@@ -23,9 +20,7 @@ export default function Home() {
 				<h1 className={`style-1 uppercase thin`}>See Rudi&apos;s cars.</h1>
 
 				<InteractiveList categories={categories} routes={routes} />
-				<p className={`paragraph width-full block left-align`}>
-					I intend to make this interactive and clickable.
-				</p>
+
 				<p className={`paragraph width-full block left-align`}>
 					For now, the image below represents how a healthy swamp, pond, or
 					wetland might look. Note the relatively clean water, the flowing

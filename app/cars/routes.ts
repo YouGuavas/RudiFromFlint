@@ -1,8 +1,8 @@
 const routes = [
 	{
-		name: 'car',
-		path: '/see/a_walk_in_the_park',
-		tags: ['swamp science', 'corvid alchemy', 'x'],
+		name: 'blue car one',
+		path: '/cars/blue_car_1',
+		tags: ['dignified rides', 'x'],
 	},
 ];
 

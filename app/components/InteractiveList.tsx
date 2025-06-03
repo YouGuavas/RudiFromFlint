@@ -4,6 +4,8 @@
 import { useState } from 'react';
 import { supabase } from '../api/lib/supabase';
 import Link from 'next/link';
+import Image from 'next/image';
+import blue_car from '../../public/logos/blue_car.svg';
 
 interface propsType {
 	categories: string[];
@@ -25,7 +27,7 @@ export default function InteractiveList(props: propsType) {
 
 	return (
 		<>
-			<h3 className={`style-1 thin lowercase spaced`}>Filters: </h3>
+			<h3 className={`style-1 thin uppercase spaced`}>Filters: </h3>
 			<ul className={`flex gap-medium no-deco pad-none width-full center`}>
 				{props.categories.map((category) => (
 					<li
@@ -39,21 +41,28 @@ export default function InteractiveList(props: propsType) {
 					</li>
 				))}
 			</ul>
-			<h3 className={`style-1 thin lowercase spaced`}>Thoughts: </h3>
+			<h3 className={`style-1 thin uppercase spaced`}>Reliable Used Cars: </h3>
 
 			<ul className={`flex gap-medium no-deco pad-none width-full center`}>
 				{links.map(({ name, path, tags }) =>
-					tags.indexOf(filter) !== -1 ? (
+					tags.indexOf(filter.toLowerCase()) !== -1 ? (
 						<li
 							key={`${name}`}
-							className={`no-deco lowercase style-1 thin spaced color-2 rounded darken px-2 py-2`}
+							className={`no-deco uppercase style-1 thin spaced color-2 rounded darken px-2 py-2`}
 						>
 							<Link
-								className={`no-deco lowercase style-1 thin spaced color-2 rounded darken px-2 py-2 bordered`}
+								className={`no-deco style-1 thin spaced color-2 rounded darken px-2 py-2 bordered flex column center`}
 								scroll={false}
 								href={`${path}`}
 								id={name.toLowerCase()}
 							>
+								<Image
+									src={blue_car.src}
+									height={50}
+									width={50}
+									alt="Car Icon"
+								/>
+
 								{`${name}.`}
 							</Link>
 						</li>

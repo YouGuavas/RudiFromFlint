@@ -8,6 +8,9 @@ import { usePathname } from 'next/navigation';
 import routes from '../routes';
 import { useTheme } from '@/app/theme/useTheme';
 import blue_car from '../../public/logos/blue_car.svg';
+import flag from '../../public/logos/flag.svg';
+import phone_icon from '../../public/logos/phone_icon.svg';
+
 import clsx from 'clsx';
 import { ProviderWrapper } from '../ThemeProviderWrapper';
 
@@ -44,20 +47,25 @@ export default function Nav() {
 			>
 				<ul className={`flex no-deco`}>
 					<li>
-						<Link className="darken" href="/">
+						<NavLink href="/">
+							<Image src={flag.src} height={50} width={50} alt="Flag Icon" />
+						</NavLink>
+					</li>
+					<li>
+						<NavLink href="/cars">
+							<Image src={blue_car.src} height={50} width={50} alt="Car Icon" />
+						</NavLink>
+					</li>
+					<li>
+						<NavLink href="/contact">
 							<Image
-								src={blue_car.src}
-								height={50}
+								src={phone_icon.src}
+								height={35}
 								width={50}
 								alt="Ripple logo"
 							/>
-						</Link>
+						</NavLink>
 					</li>
-					{routes.map(({ name, path }) => (
-						<li key={path}>
-							<NavLink href={path}>{name}</NavLink>
-						</li>
-					))}
 				</ul>
 			</nav>
 		</ProviderWrapper>
