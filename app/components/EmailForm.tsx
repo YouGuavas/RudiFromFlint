@@ -6,7 +6,9 @@ import { supabase } from '../api/lib/supabase';
 
 export default function EmailForm() {
 	const [email, setEmail] = useState('');
-	const [name, setName] = useState('');
+	const [first_name, setFirstName] = useState('');
+	const [last_name, setLastName] = useState('');
+
 	const [phone, setPhone] = useState('');
 
 	const [status, setStatus] = useState<
@@ -53,9 +55,17 @@ export default function EmailForm() {
 				/>
 				<input
 					type="text"
-					value={name}
-					onChange={(e) => setName(e.target.value)}
-					placeholder="Your First and Last Name"
+					value={first_name}
+					onChange={(e) => setFirstName(e.target.value)}
+					placeholder="Your First Name"
+					className="py-1"
+					required
+				/>
+				<input
+					type="text"
+					value={last_name}
+					onChange={(e) => setLastName(e.target.value)}
+					placeholder="Your Last Name"
 					className="py-1"
 					required
 				/>

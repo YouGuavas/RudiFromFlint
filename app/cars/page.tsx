@@ -14,13 +14,13 @@ import { ProviderWrapper } from '../ThemeProviderWrapper';
 export const metadata: Metadata = {
 	title: 'Rudi | Cars',
 	description:
-		'See the visuals that drive the ripples behind Patripples! Envisioned by Patrick Yambrick.',
+		'See the cars that drive behind Rudi Aleman, Jr.! Envisioned by Patrick Other.',
 };
 export default function Home() {
 	return (
 		<ProviderWrapper>
 			<main className={`main center height-full flex column`}>
-				<h1 className={`style-1 lowercase thin`}>See my thoughts.</h1>
+				<h1 className={`style-1 uppercase thin`}>See Rudi&apos;s cars.</h1>
 
 				<InteractiveList categories={categories} routes={routes} />
 				<p className={`paragraph width-full block left-align`}>

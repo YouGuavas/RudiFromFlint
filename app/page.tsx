@@ -1,35 +1,53 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import blue_car from '../public/logos/blue_car.svg';
+import flag from '../public/logos/flag.svg';
+
 import EmailForm from './components/EmailForm';
-import { MapContainer } from 'react-leaflet/MapContainer';
-import { TileLayer } from 'react-leaflet/TileLayer';
-import { useMap } from 'react-leaflet/hooks';
+
 import type { Metadata } from 'next';
 import { ProviderWrapper } from './ThemeProviderWrapper';
 export const metadata: Metadata = {
-	title: 'Rudi | Champion',
-	description: 'Patripples: ripples, mathematics, and more! Coming soon!',
+	title: 'Rudi | Champion Used Cars in Flint, MI',
+	description:
+		'Dignified rides and reliable used cars near Flint, MI — by RudiFromFlint. Website supported and visualized by Patrick Other.',
 	icons: {
 		icon: '/favicon.ico',
 	},
 };
+
 export default function Home() {
 	return (
 		<ProviderWrapper>
 			<main className={`main center`}>
-				<h2
-					className={`uppercase spaced style-1 thin flex gap-small center font-large`}
+				<h1
+					className={`uppercase spaced style-1 thin flex gap-medium center font-large`}
 				>
-					<Image src={blue_car.src} height={75} width={75} alt="Ripple logo" />{' '}
+					<Image src={blue_car.src} height={75} width={75} alt="Blue car" />{' '}
+					Rudi&apos;s Rides.
+					<Image src={flag.src} height={75} width={75} alt="Checkered flag." />
+				</h1>
+				<p className={`paragraph width-full left-align`}>
+					(Possibly a carousel of photos of Rudi's available or previously sold
+					cars)
+				</p>
+				<h2
+					className={`uppercase spaced style-1 thin flex gap-medium center font-large`}
+				>
 					About Rudi.
 				</h2>
 				<p className={`paragraph width-full left-align`}>
 					Rudi is a walking smile - a Champion of the sun, with the sunniest
-					disposition - and wants you to be, too. When you see Rudi smiling at
-					you, you feel the warmth of a sunny day shining onto you, and
-					you&apos;ll want to share that warmth with all around. What better way
-					to get the word out than to ride in style?
+					disposition. In short, Rudi&apos;s a good dude, and wants you to be,
+					too. When you see Rudi smiling at you, you feel the warmth of a sunny
+					day shining onto you, and you&apos;ll want to share that warmth with
+					all around. What better way to get the word out than to ride in style?
+				</p>
+				<p className={`paragraph width-full left-align`}>
+					Behind Rudi&apos;s charismatic smile stands a man with a plan - to
+					help you get a jump start on your best life. Are you ready to cross
+					the finish line and watch the haters wave the white flag while you
+					walk around with a checkered smile?
 				</p>
 				<h1 className={`uppercase spaced style-1 thin font-large`}>
 					About You.
@@ -38,6 +56,18 @@ export default function Home() {
 					You already are a Champion, if you ask Rudi. Everybody knows that a
 					Champion like you deserves a dignified ride - a King&apos;s Chariot
 					(or two) - with a sunshine smile on the side.
+				</p>
+				<p className={`paragraph width-full left-align`}>
+					You are someone who is looking for the right set of reliable wheels to
+					help you get to moving on your own two feet.
+				</p>
+				<p className={`paragraph width-full left-align`}>
+					You have a sense for destiny and a drive for legacy.
+				</p>
+				<p className={`paragraph width-full left-align`}>
+					Looking to buy a used car near Flint, Michigan? Would you rather it be
+					a Champion&apos;s Chariot than some lame lemon? Rudi&apos;s the
+					Champion for you.
 				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					How to smile like a champion.
