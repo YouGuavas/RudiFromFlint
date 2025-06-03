@@ -42,13 +42,13 @@ export default function EmailForm() {
 
 	return (
 		<form onSubmit={handleSubmit} className="full form">
-			<div className={`full row`}>
+			<div className={`full row flex`}>
 				<input
 					type="email"
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 					placeholder="your@email.com"
-					className="py-1"
+					className="py-1 full row "
 					required
 				/>
 				<input
@@ -64,13 +64,13 @@ export default function EmailForm() {
 					value={phone}
 					onChange={(e) => setPhone(e.target.value)}
 					placeholder="(555) 555-1234"
-					className="py-1"
+					className="py-1 full row"
 					required
 				/>
 				<button
 					type="submit"
 					disabled={status === 'loading'}
-					className="py-1 style-1 lowercase thin spaced"
+					className="py-1 style-1 lowercase thin spaced full row "
 				>
 					{status === 'loading' ? 'rippling...' : 'wave'}
 				</button>

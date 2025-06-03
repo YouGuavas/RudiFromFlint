@@ -1,2 +1,8 @@
 ##To Do##
-Ripples of trash graph
+Map
+
+Finish content writing
+
+SVG - car - mirror & flag
+
+SVG - Rudi - full

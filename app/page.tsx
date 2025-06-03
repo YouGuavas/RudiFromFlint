@@ -2,8 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ripples from '../public/logos/ripples.png';
 import EmailForm from './components/EmailForm';
-import fish from '../public/memes/fish_fear.png';
-
+import { MapContainer } from 'react-leaflet/MapContainer';
+import { TileLayer } from 'react-leaflet/TileLayer';
+import { useMap } from 'react-leaflet/hooks';
 import type { Metadata } from 'next';
 import { ProviderWrapper } from './ThemeProviderWrapper';
 export const metadata: Metadata = {
@@ -18,56 +19,69 @@ export default function Home() {
 		<ProviderWrapper>
 			<main className={`main center`}>
 				<Image src={ripples.src} height={25} width={25} alt="Ripple logo" />
-				<h1 className={`uppercase spaced style-1 thin font-large`}>
-					How to be a champion.
-				</h1>
-				<p className={`paragraph full left`}>
-					You already are a champion, if you ask me. Everybody knows that a
-					champion deserves a chariot fit for a king.
-				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					About Rudi.
 				</h2>
-				<p className={`paragraph full left`}>
-					Rudi is a walking smile - a champion of the sun - and wants you to be,
-					too. When you see Rudi smiling at you, you feel the warmth of a sunny
-					day shining onto you, and you&apos;ll want to share that warmth with
-					all around. What better way to get the word out than to ride in style?
+				<p className={`paragraph width-full left-align`}>
+					Rudi is a walking smile - a Champion of the sun, with the sunniest
+					disposition - and wants you to be, too. When you see Rudi smiling at
+					you, you feel the warmth of a sunny day shining onto you, and
+					you&apos;ll want to share that warmth with all around. What better way
+					to get the word out than to ride in style?
+				</p>
+				<h1 className={`uppercase spaced style-1 thin font-large`}>
+					About You.
+				</h1>
+				<p className={`paragraph width-full left-align`}>
+					You already are a Champion, if you ask Rudi. Everybody knows that a
+					Champion like you deserves a dignified ride - a King&apos;s Chariot
+					(or two) - with a sunshine smile on the side.
 				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					How to smile like a champion.
 				</h2>
-				<p className={`paragraph full left`}>
+				<p className={`paragraph width-full left-align`}>
 					You can carry some of Rudi&apos;s sunlight with you by envisioning
 					yourself beaming bright as you step up out of your chariot, ready to
 					be champion.
 				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					How to feel like a king.
+					How to roll like a king.
 				</h2>
-				<p className={`paragraph full left`}>
-					Check Rudi out at Champion Auto Sales in , where all credit is
-					approved and everyone can find financing.
+				<p className={`paragraph width-full left-align`}>
+					Let Rudi fight for you at Champion Auto Sales in Mount Morris,
+					Michigan, where all credit is approved and everyone can find dignified
+					financing fit for a King, a Queen, or Anyone In Between.
 				</p>
-				<ul className={`no-deco flex column gap-small`}>
-					<li></li>{' '}
-					<li>
-						Accelerating Empathy - Deep empathy - for each other, of course;
-						also for all living beings, and for the planet on which we all
-						reside - improves outcomes for everyone. The mathematics of this
-						checks out. It will prove itself. Or you can look up mid-term and
-						long-term financial outcomes in societies who historically have
-						prized health and ecological harmony vs those who have prioritized
-						industry.
-					</li>
-					<li>Lichenization - No explanation.</li>
+				<ul className={`no-deco flex column gap-small width-full`}>
+					<li
+						className={`no-deco width-full flex column left-align font-large`}
+					>
+						Reliable Ride
+					</li>{' '}
+					<li
+						className={`no-deco width-full flex column left-align font-large`}
+					>
+						Guaranteed Financing
+					</li>{' '}
+					<li
+						className={`no-deco width-full flex column left-align font-large`}
+					>
+						Dignified Smile
+					</li>{' '}
 				</ul>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					How to join the wave.
+					Where to find your champion.
+				</h2>
+				<p className={`paragraph width-full left-align`}>
+					Rudi fights for you at 6197 Clio Road, in Mount Morris, Michigan.
+				</p>
+				<h2 className={`uppercase spaced style-1 thin font-large`}>
+					How to join your champion.
 				</h2>{' '}
-				<p>
-					If you haven&apos;t already, please consider adding yourself to my
-					mailing list for future updates:
+				<p className={`paragraph width-full left-align`}>
+					If you haven&apos;t already, please consider adding yourself to
+					Rudi&apos;s Winner&apos;s Circle for future updates:
 				</p>
 				<EmailForm />
 			</main>
