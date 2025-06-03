@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ripples from '../public/logos/ripples.png';
+import blue_car from '../public/logos/blue_car.svg';
 import EmailForm from './components/EmailForm';
 import { MapContainer } from 'react-leaflet/MapContainer';
 import { TileLayer } from 'react-leaflet/TileLayer';
@@ -18,8 +18,10 @@ export default function Home() {
 	return (
 		<ProviderWrapper>
 			<main className={`main center`}>
-				<Image src={ripples.src} height={25} width={25} alt="Ripple logo" />
-				<h2 className={`uppercase spaced style-1 thin font-large`}>
+				<h2
+					className={`uppercase spaced style-1 thin flex gap-small center font-large`}
+				>
+					<Image src={blue_car.src} height={75} width={75} alt="Ripple logo" />{' '}
 					About Rudi.
 				</h2>
 				<p className={`paragraph width-full left-align`}>

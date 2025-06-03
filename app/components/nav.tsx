@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 import routes from '../routes';
 import { useTheme } from '@/app/theme/useTheme';
-import ripples from '../../public/logos/ripples.png';
+import blue_car from '../../public/logos/blue_car.svg';
 import clsx from 'clsx';
 import { ProviderWrapper } from '../ThemeProviderWrapper';
 
@@ -46,7 +46,7 @@ export default function Nav() {
 					<li>
 						<Link className="darken" href="/">
 							<Image
-								src={ripples.src}
+								src={blue_car.src}
 								height={50}
 								width={50}
 								alt="Ripple logo"
