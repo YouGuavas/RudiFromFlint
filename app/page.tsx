@@ -112,7 +112,7 @@ export default function Home() {
 				<p className={`paragraph width-full left-align`}>
 					Rudi fights for you at 6197 Clio Road, in Mount Morris, Michigan.
 				</p>
-				<Image src={map.src} height={400} width={400} alt="Blue car" />{' '}
+				<Image src={map.src} height={300} width={300} alt="Blue car" />{' '}
 				<p className={`paragraph width-full left-align`}>
 					(This can be made interactive once I have my own internet connection -
 					we can have Cartoon Rudi show people around the lot).
