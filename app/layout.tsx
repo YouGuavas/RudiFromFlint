@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header';
 import Nav from './components/nav';
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
@@ -23,6 +24,7 @@ export default function RootLayout({
 				/>
 			</Head>
 			<body className={`${inter.className} bg-5`}>
+				<Header />
 				<Nav />
 
 				{children}

@@ -7,7 +7,10 @@ import { usePathname } from 'next/navigation';
 
 import routes from '../routes';
 import { useTheme } from '@/app/theme/useTheme';
+import contact from '../contact.json';
+import phone_icon from '../../public/logos/phone_icon.svg';
 
+import mail_icon from '../../public/logos/mail_icon.svg';
 import clsx from 'clsx';
 
 type NavLinkProps = {
@@ -37,12 +40,21 @@ function NavLink({ href, children }: NavLinkProps) {
 export default function Header() {
 	return (
 		<header
-			className={`${styles.myNavFull} py-1 px-1 bg-4 left flex fixed top`}
+			className={`width-full center py-1 px-1 bg-4 left flex fixed top z10`}
 			id="menu-full"
 		>
-			<ul className={`flex no-deco`}>
-				<li>Email</li>
-				<li>Phone</li>
+			<ul className={`flex no-deco width-half center between`}>
+				<li>
+					<Image src={mail_icon.src} height={35} width={50} alt="Ripple logo" />
+				</li>
+				<li>
+					<Image
+						src={phone_icon.src}
+						height={35}
+						width={50}
+						alt="Ripple logo"
+					/>
+				</li>
 				<li>Location</li>
 			</ul>
 		</header>
