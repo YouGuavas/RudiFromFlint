@@ -23,20 +23,28 @@ export default function Home() {
 		<ProviderWrapper>
 			<main className={`main center`}>
 				<section className={`flex column center`}>
-					<Image
-						src={car_and_flag.src}
-						height={500}
-						width={500}
-						alt="Blue car"
-					/>{' '}
+					<div className={`relative`}>
+						<h1
+							className={`absolute absolute-center z10 uppercase thin spaced`}
+						>
+							Champion
+						</h1>
+						<Image
+							src={car_and_flag.src}
+							height={500}
+							className={`relative`}
+							width={500}
+							alt="Car and flag"
+						/>
+					</div>{' '}
 					<div className={`flex center width-full`}>
 						<Image src={blue_car.src} height={50} width={50} alt="Blue car" />
-						<h1
+						<h2
 							className={`uppercase spaced style-1 thin flex gap-medium center font-large`}
 						>
 							{' '}
 							Rudi&apos;s Rides.
-						</h1>
+						</h2>
 						<Image
 							src={flag.src}
 							height={50}
