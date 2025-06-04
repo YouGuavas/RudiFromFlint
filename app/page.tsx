@@ -29,8 +29,8 @@ export default function Home() {
 					<Image src={flag.src} height={75} width={75} alt="Checkered flag." />
 				</h1>
 				<p className={`paragraph width-full left-align`}>
-					(Possibly a carousel of photos of Rudi's available or previously sold
-					cars)
+					(Possibly a carousel of photos of Rudi&apos;s available or previously
+					sold cars)
 				</p>
 				<h2
 					className={`uppercase spaced style-1 thin flex gap-medium center font-large`}
