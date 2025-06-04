@@ -31,7 +31,7 @@ export default function Home() {
 					</Link>
 				</p>
 				<p className={`style-1`}>
-					Email:{' '}
+					Email Rudi:{' '}
 					<Link
 						className={`no-deco style-1 spaced lowercase`}
 						href="mailto:pat@patripples.com"

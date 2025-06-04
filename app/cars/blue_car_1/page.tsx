@@ -22,16 +22,16 @@ export default function Home() {
 				</p>
 				<ul className={`flex column gap-medium left-align width-full no-deco`}>
 					<li>
-						<strong>Make:</strong>
+						<strong>Make:</strong> Blue
 					</li>
 					<li>
-						<strong>Model:</strong>
+						<strong>Model:</strong> Car
 					</li>
 					<li>
-						<strong>Mileage:</strong>
+						<strong>Mileage:</strong> One
 					</li>
 					<li>
-						<strong>Year:</strong>
+						<strong>Year:</strong> One
 					</li>
 				</ul>
 			</main>

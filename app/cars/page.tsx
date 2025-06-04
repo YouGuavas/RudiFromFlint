@@ -1,7 +1,6 @@
 import routes from './routes';
 import categories from '../categories';
 import InteractiveList from '../components/InteractiveList';
-//import RippleGraph from '../components/RippleGraph';
 
 import type { Metadata } from 'next';
 
@@ -21,31 +20,7 @@ export default function Home() {
 
 				<InteractiveList categories={categories} routes={routes} />
 
-				<p className={`paragraph width-full block left-align`}>
-					For now, the image below represents how a healthy swamp, pond, or
-					wetland might look. Note the relatively clean water, the flowing
-					stream, and the edges, which should generally be smooth.
-				</p>
-				{/*<Image
-					alt="A healthy pond or wetland"
-					height={300}
-					width={300}
-					src={'wetland.src'}
-				/>*/}
 				<p className={`paragraph width-full block`}></p>
-
-				{/*<RippleGraph nodes={nodes} links={links} />*/}
-				{/*<D3Graph
-				data={[
-					//{ x: 0, y: 1 },
-					{ x: 1, y: 1 },
-					//{ x: 2, y: 1 },
-					{ x: 1, y: 2 },
-					//{ x: 0, y: 2 },
-				]}
-				width={50}
-				height={50}
-			/>*/}
 			</main>
 		</ProviderWrapper>
 	);

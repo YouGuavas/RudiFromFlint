@@ -44,39 +44,43 @@ export default function EmailForm() {
 
 	return (
 		<form onSubmit={handleSubmit} className="full form">
-			<div className={`full row flex`}>
-				<input
-					type="email"
-					value={email}
-					onChange={(e) => setEmail(e.target.value)}
-					placeholder="your@email.com"
-					className="py-1 full row "
-					required
-				/>
-				<input
-					type="text"
-					value={first_name}
-					onChange={(e) => setFirstName(e.target.value)}
-					placeholder="Your First Name"
-					className="py-1"
-					required
-				/>
-				<input
-					type="text"
-					value={last_name}
-					onChange={(e) => setLastName(e.target.value)}
-					placeholder="Your Last Name"
-					className="py-1"
-					required
-				/>
-				<input
-					type="phone"
-					value={phone}
-					onChange={(e) => setPhone(e.target.value)}
-					placeholder="(555) 555-1234"
-					className="py-1 full row"
-					required
-				/>
+			<div className={`full flex column gap-small`}>
+				<div className={`full flex row gap-small`}>
+					<input
+						type="text"
+						value={first_name}
+						onChange={(e) => setFirstName(e.target.value)}
+						placeholder="Your First Name"
+						className="py-1"
+						required
+					/>
+					<input
+						type="text"
+						value={last_name}
+						onChange={(e) => setLastName(e.target.value)}
+						placeholder="Your Last Name"
+						className="py-1"
+						required
+					/>
+				</div>
+				<div className={`full flex row gap-small`}>
+					<input
+						type="email"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+						placeholder="your@email.com"
+						className="py-1 full row "
+						required
+					/>
+					<input
+						type="phone"
+						value={phone}
+						onChange={(e) => setPhone(e.target.value)}
+						placeholder="(555) 555-1234"
+						className="py-1 full row"
+						required
+					/>
+				</div>
 				<button
 					type="submit"
 					disabled={status === 'loading'}

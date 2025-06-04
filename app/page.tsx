@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import blue_car from '../public/logos/blue_car.svg';
 import flag from '../public/logos/flag.svg';
+import map from '../public/logos/map.svg';
 
 import EmailForm from './components/EmailForm';
 
@@ -102,11 +103,22 @@ export default function Home() {
 						Dignified Smile
 					</li>{' '}
 				</ul>
+				<p className={`paragraph width-full left-align`}>
+					Get yourself a reliable used auto with Rudi.
+				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					Where to find your champion.
 				</h2>
 				<p className={`paragraph width-full left-align`}>
 					Rudi fights for you at 6197 Clio Road, in Mount Morris, Michigan.
+				</p>
+				<Image src={map.src} height={600} width={600} alt="Blue car" />{' '}
+				<p className={`paragraph width-full left-align`}>
+					(This can be made interactive once I have my own internet connection -
+					we can have Cartoon Rudi show people around the lot).
+				</p>{' '}
+				<p className={`paragraph width-full left-align`}>
+					(Static map credit to Google Maps).
 				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					How to join your champion.
