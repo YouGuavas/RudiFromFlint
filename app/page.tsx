@@ -29,9 +29,9 @@ export default function Home() {
 						<h1 className={`undisplayed`}>Champion Auto Sales</h1>
 						<Image
 							src={main_logo.src}
-							height={500}
+							height={400}
 							className={`relative`}
-							width={500}
+							width={400}
 							alt="Car and flag"
 						/>
 					</div>{' '}
