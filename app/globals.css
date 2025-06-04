@@ -153,6 +153,9 @@ button {
 .fixed {
 	position: fixed;
 }
+.top {
+	top: 0;
+}
 /*text decoration*/
 .no-deco {
 	text-decoration: none;
