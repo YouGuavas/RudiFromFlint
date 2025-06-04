@@ -163,6 +163,7 @@ button {
 .undisplayed {
 	display: none;
 }
+
 .absolute {
 	position: absolute;
 }
@@ -472,7 +473,7 @@ button {
 	}
 }
 
-@media only screen and (max-width: var(--md-max)) {
+@media only screen and (max-width: 850px) {
 	.disappear-md {
 		display: none;
 	}
@@ -486,6 +487,9 @@ button {
 	.my-logo {
 		position: initial;
 		top: unset;
+	}
+	.width-half {
+		width: 100%;
 	}
 }
 

@@ -7,8 +7,7 @@ import { usePathname } from 'next/navigation';
 
 import routes from '../routes';
 import { useTheme } from '@/app/theme/useTheme';
-import blue_car from '../../public/logos/blue_car.svg';
-import flag from '../../public/logos/flag.svg';
+import car_and_flag from '../../public/logos/car_and_flag.svg';
 import phone_icon from '../../public/logos/phone_icon.svg';
 
 import clsx from 'clsx';
@@ -47,15 +46,16 @@ export default function Nav() {
 			>
 				<ul className={`flex no-deco`}>
 					<li>
-						<NavLink href="/">
-							<Image src={flag.src} height={50} width={50} alt="Flag Icon" />
+						<NavLink href="/#top">
+							<Image
+								src={car_and_flag.src}
+								height={50}
+								width={50}
+								alt="Flag Icon"
+							/>
 						</NavLink>
 					</li>
-					<li>
-						<NavLink href="/cars">
-							<Image src={blue_car.src} height={50} width={50} alt="Car Icon" />
-						</NavLink>
-					</li>
+
 					<li>
 						<NavLink href="/contact">
 							<Image

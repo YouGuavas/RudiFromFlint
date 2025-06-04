@@ -81,7 +81,7 @@ export default function Home() {
 					</p>
 				</section>
 
-				<section className={`flex width-half left-align`}>
+				<section className={`flex width-half center`}>
 					<h2 className={`uppercase spaced style-1 thin font-large`}>
 						Where is Rudi.
 					</h2>
@@ -127,39 +127,6 @@ export default function Home() {
 					</ul>
 					<p className={`paragraph width-full left-align`}>
 						Get yourself a reliable used auto with Rudi.
-					</p>
-				</section>
-
-				<section className={`flex width-half `}>
-					<h2 className={`uppercase spaced style-1 thin font-large`}>
-						About You.
-					</h2>
-					<p className={`paragraph width-full left-align`}>
-						You already are a Champion, if you ask Rudi. Everybody knows that a
-						Champion like you deserves a dignified ride - a King&apos;s Chariot
-						(or two) - with a sunshine smile on the side.
-					</p>
-					<p className={`paragraph width-full left-align`}>
-						You are someone who is looking for the right set of reliable wheels
-						to help you get to moving on your own two feet.
-					</p>
-					<p className={`paragraph width-full left-align`}>
-						You have a sense for destiny and a drive for legacy.
-					</p>
-					<p className={`paragraph width-full left-align`}>
-						Looking to buy a used car near Flint, Michigan? Would you rather it
-						be a Champion&apos;s Chariot than some lame lemon? Rudi&apos;s the
-						Champion for you.
-					</p>
-				</section>
-				<section className={`flex width-half`}>
-					<h2 className={`uppercase spaced style-1 thin font-large`}>
-						How to smile like a champion.
-					</h2>
-					<p className={`paragraph width-full left-align`}>
-						You can carry some of Rudi&apos;s sunlight with you by envisioning
-						yourself beaming bright as you step up out of your chariot, ready to
-						be champion.
 					</p>
 				</section>
 
