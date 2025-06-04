@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import contact from '../contact.json';
 
 import styles from '../page.module.css';
 import { ProviderWrapper } from '../ThemeProviderWrapper';
@@ -28,16 +29,16 @@ export default function Home() {
 							className={`no-deco style-1 spaced lowercase`}
 							href="tel:+18103470910"
 						>
-							(810) 347-0910
+							{contact.phone}
 						</Link>
 					</p>
 					<p className={`style-1`}>
 						Email Rudi:{' '}
 						<Link
 							className={`no-deco style-1 spaced lowercase`}
-							href="mailto:pat@patripples.com"
+							href={`mailto:${contact.email}`}
 						>
-							rudi@rudisemail.com
+							{contact.email}
 						</Link>
 					</p>
 				</section>
