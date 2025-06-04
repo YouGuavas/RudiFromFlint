@@ -25,16 +25,19 @@ export default function Home() {
 		<ProviderWrapper>
 			<main className={`main flex width-full gap-small px-1`}>
 				<section className={`flex column center width-full`}>
-					<div className={`relative`}>
-						<h1 className={`undisplayed`}>Champion Auto Sales</h1>
-						<Image
-							src={main_logo.src}
-							height={400}
-							className={`relative`}
-							width={400}
-							alt="Car and flag"
-						/>
-					</div>{' '}
+					<h1 className={`undisplayed`}>Champion Auto Sales</h1>
+					<Image
+						src={main_logo.src}
+						height={400}
+						className={`relative`}
+						width={400}
+						alt="Car and flag"
+					/>
+					<ul className={`flex no-deco gap-medium center`}>
+						<li>{contact.phone}</li>
+						<li>{contact.email}</li>
+						<li className={`width-full`}>{contact.address}</li>
+					</ul>
 				</section>
 				<section className={`flex center width-full `}>
 					<div className={`width-full flex center`}>
@@ -56,6 +59,9 @@ export default function Home() {
 						Rudi is here to help you find the ride of your dreams within a
 						budget that makes sense for you. All credit? All day. No credit? No
 						problem.
+					</p>
+					<p className={`paragraph center width-half`}>
+						TODO: Adjust layouts, edit content, convert car selector tool.
 					</p>
 				</section>
 

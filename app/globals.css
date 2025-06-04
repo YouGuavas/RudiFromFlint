@@ -318,7 +318,7 @@ button {
 /*layout*/
 .main {
 	min-height: 100vh;
-	padding: 3rem 3rem 4.5rem 3rem;
+	padding: 4.5rem 2rem 2rem 2rem;
 	color: var(--color-2);
 }
 .form {
@@ -401,6 +401,7 @@ button {
 .between {
 	justify-content: space-between;
 }
+
 /* /flex */
 
 /*rotate*/

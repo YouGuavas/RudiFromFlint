@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<ProviderWrapper>
-			<main className={`main center`}>
+			<main className={`main center top-gap`}>
 				<section>
 					<h1 className="uppercase style-2 thin font-large">
 						Want to contact Rudi?
@@ -27,7 +27,7 @@ export default function Home() {
 						Call or Text Rudi:{' '}
 						<Link
 							className={`no-deco style-1 spaced lowercase`}
-							href="tel:+18103470910"
+							href={`tel:+${contact.phone}`}
 						>
 							{contact.phone}
 						</Link>

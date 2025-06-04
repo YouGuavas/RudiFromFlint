@@ -4,13 +4,14 @@ import styles from './nav.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-
 import routes from '../routes';
 import { useTheme } from '@/app/theme/useTheme';
 import contact from '../contact.json';
 import phone_icon from '../../public/logos/phone_icon.svg';
 
 import mail_icon from '../../public/logos/mail_icon.svg';
+import location_icon from '../../public/logos/location_icon.svg';
+
 import clsx from 'clsx';
 
 type NavLinkProps = {
@@ -45,17 +46,44 @@ export default function Header() {
 		>
 			<ul className={`flex no-deco width-half center between`}>
 				<li>
-					<Image src={mail_icon.src} height={35} width={50} alt="Ripple logo" />
+					<Link
+						className={`style-1 lowercase spaced thin no-deco darken`}
+						href={`mailto:${contact.email}`}
+					>
+						<Image
+							src={mail_icon.src}
+							height={35}
+							width={50}
+							alt="Ripple logo"
+						/>
+					</Link>
 				</li>
 				<li>
-					<Image
-						src={phone_icon.src}
-						height={35}
-						width={50}
-						alt="Ripple logo"
-					/>
+					<Link
+						className={`style-1 lowercase spaced thin no-deco darken`}
+						href={`tel:+${contact.phone}`}
+					>
+						<Image
+							src={phone_icon.src}
+							height={35}
+							width={50}
+							alt="Ripple logo"
+						/>
+					</Link>
 				</li>
-				<li>Location</li>
+				<li>
+					<Link
+						className={`style-1 lowercase spaced thin no-deco darken`}
+						href="https://maps.app.goo.gl/UeGNSBdcxHJahoNK6"
+					>
+						<Image
+							src={location_icon.src}
+							height={35}
+							width={50}
+							alt="Ripple logo"
+						/>
+					</Link>
+				</li>
 			</ul>
 		</header>
 	);
