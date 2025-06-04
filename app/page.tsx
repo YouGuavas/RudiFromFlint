@@ -107,12 +107,12 @@ export default function Home() {
 					Get yourself a reliable used auto with Rudi.
 				</p>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					Where to find your champion.
+					Where is your champion.
 				</h2>
 				<p className={`paragraph width-full left-align`}>
 					Rudi fights for you at 6197 Clio Road, in Mount Morris, Michigan.
 				</p>
-				<Image src={map.src} height={500} width={500} alt="Blue car" />{' '}
+				<Image src={map.src} height={400} width={400} alt="Blue car" />{' '}
 				<p className={`paragraph width-full left-align`}>
 					(This can be made interactive once I have my own internet connection -
 					we can have Cartoon Rudi show people around the lot).

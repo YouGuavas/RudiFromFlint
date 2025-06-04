@@ -44,7 +44,7 @@ export default function EmailForm() {
 
 	return (
 		<form onSubmit={handleSubmit} className="full form">
-			<div className={`full flex column gap-small`}>
+			<div className={`full flex column center gap-small`}>
 				<div className={`full flex row gap-small`}>
 					<input
 						type="text"
