@@ -81,7 +81,7 @@ export default function Home() {
 					</p>
 				</section>
 
-				<section className={`flex width-half`}>
+				<section className={`flex width-half left-align`}>
 					<h2 className={`uppercase spaced style-1 thin font-large`}>
 						Where is Rudi.
 					</h2>
@@ -89,7 +89,7 @@ export default function Home() {
 						Rudi fights for you at {contact.address}, just south of the exit
 						ramps.
 					</p>
-					<Image src={map.src} height={300} width={300} alt="Blue car" />{' '}
+					<Image src={map.src} height={220} width={220} alt="Blue car" />{' '}
 					<p className={`paragraph width-full left-align`}>
 						(This can be made interactive once I have my own internet connection
 						- we can have Cartoon Rudi show people around the lot).
