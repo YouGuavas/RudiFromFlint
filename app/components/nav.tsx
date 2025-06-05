@@ -41,7 +41,7 @@ export default function Nav() {
 		>
 			<ul className={`flex no-deco`}>
 				<li>
-					<NavLink href="/#top">
+					<NavLink href="/">
 						<div className={`icon-container`}>
 							<Image src={car_and_flag.src} fill alt="Flag Icon" />
 						</div>
