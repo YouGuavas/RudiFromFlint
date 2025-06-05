@@ -4,8 +4,6 @@ import blue_car from '../../../public/logos/blue_car.svg';
 
 import type { Metadata } from 'next';
 
-import { ProviderWrapper } from '../../ThemeProviderWrapper';
-
 export const metadata: Metadata = {
 	title: 'Rudi | Blue Car One',
 	description:
