@@ -8,6 +8,7 @@ import main_logo from '../public/logos/main_logo.svg';
 import contact from './contact.json';
 
 import EmailForm from './components/EmailForm';
+import Carousel from './components/car-ousel';
 
 import type { Metadata } from 'next';
 import { ProviderWrapper } from './ThemeProviderWrapper';
@@ -41,7 +42,7 @@ export default function Home() {
 					</ul>
 				</section>
 				<section className={`flex center width-full `}>
-					<div className={`width-full flex center`}>
+					<div className={`width-full flex center gap-small`}>
 						<div className={`icon-container`}>
 							<Image src={blue_car.src} fill alt="Blue car" />
 						</div>
@@ -60,6 +61,7 @@ export default function Home() {
 						budget that makes sense for you. All credit? All day. No credit? No
 						problem.
 					</p>
+					<Carousel />
 					<p className={`paragraph center width-half`}>
 						TODO: Adjust layouts, edit content, convert car selector tool.
 					</p>

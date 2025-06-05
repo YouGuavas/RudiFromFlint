@@ -1,10 +1,8 @@
 'use client';
 
-import styles from './nav.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import routes from '../routes';
 import { useTheme } from '@/app/theme/useTheme';
 import contact from '../contact.json';
 import phone_icon from '../../public/logos/phone_icon.svg';
