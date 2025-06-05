@@ -321,7 +321,7 @@ button {
 /*layout*/
 .main {
 	min-height: 100vh;
-	padding: 4.5rem 2rem 2rem 2rem;
+	padding: 4.5rem 0;
 	color: var(--color-2);
 }
 .banner-container {

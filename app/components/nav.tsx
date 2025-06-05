@@ -5,13 +5,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import routes from '../routes';
-import { useTheme } from '@/app/theme/useTheme';
 import car_and_flag from '../../public/logos/car_and_flag.svg';
 import phone_icon from '../../public/logos/phone_icon.svg';
 
 import clsx from 'clsx';
-import { ProviderWrapper } from '../ThemeProviderWrapper';
 
 type NavLinkProps = {
 	href: string;
@@ -21,14 +18,13 @@ type NavLinkProps = {
 function NavLink({ href, children }: NavLinkProps) {
 	const pathName = usePathname();
 	const isActive = pathName === href;
-	const { theme } = useTheme();
 	return (
 		<Link
 			scroll={false}
 			href={href}
 			id={pathName.toLowerCase()}
 			className={clsx(
-				`style-1 lowercase spaced thin no-deco darken z15 ${theme}`,
+				`style-1 lowercase spaced thin no-deco darken z15`,
 				isActive ? 'darken color-2' : 'color-2'
 			)}
 		>
@@ -39,35 +35,27 @@ function NavLink({ href, children }: NavLinkProps) {
 
 export default function Nav() {
 	return (
-		<ProviderWrapper>
-			<nav
-				className={`${styles.myNavFull} py-1 px-1 bg-4 left flex fixed`}
-				id="menu-full"
-			>
-				<ul className={`flex no-deco`}>
-					<li>
-						<NavLink href="/#top">
-							<Image
-								src={car_and_flag.src}
-								height={50}
-								width={50}
-								alt="Flag Icon"
-							/>
-						</NavLink>
-					</li>
+		<nav
+			className={`${styles.myNavFull} py-1 px-1 bg-4 left flex fixed`}
+			id="menu-full"
+		>
+			<ul className={`flex no-deco`}>
+				<li>
+					<NavLink href="/#top">
+						<div className={`icon-container`}>
+							<Image src={car_and_flag.src} fill alt="Flag Icon" />
+						</div>
+					</NavLink>
+				</li>
 
-					<li>
-						<NavLink href="/contact">
-							<Image
-								src={phone_icon.src}
-								height={35}
-								width={50}
-								alt="Ripple logo"
-							/>
-						</NavLink>
-					</li>
-				</ul>
-			</nav>
-		</ProviderWrapper>
+				<li>
+					<NavLink href="/contact">
+						<div className={`icon-container`}>
+							<Image src={phone_icon.src} fill alt="Phone icon" />
+						</div>
+					</NavLink>
+				</li>
+			</ul>
+		</nav>
 	);
 }
