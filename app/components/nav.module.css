@@ -1,5 +1,6 @@
 .myNavFull {
 	bottom: 0;
+	z-index: 10;
 	width: 100%;
 	align-items: center; /* Aligns along the cross-axis: here, the y axis - standard flex */
 	justify-content: space-between; /* Pushes children to opposite sides */

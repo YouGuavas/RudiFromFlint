@@ -26,13 +26,14 @@ export default function Home() {
 			<main className={`main flex width-full gap-small px-1`}>
 				<section className={`flex column center width-full`}>
 					<h1 className={`undisplayed`}>Champion Auto Sales</h1>
-					<Image
-						src={main_logo.src}
-						height={400}
-						className={`relative`}
-						width={400}
-						alt="Car and flag"
-					/>
+					<div className={`banner-container`}>
+						<Image
+							src={main_logo.src}
+							fill
+							className={`relative`}
+							alt="Car and flag"
+						/>
+					</div>
 					<ul className={`flex no-deco gap-medium center`}>
 						<li>{contact.phone}</li>
 						<li>{contact.email}</li>
@@ -41,19 +42,18 @@ export default function Home() {
 				</section>
 				<section className={`flex center width-full `}>
 					<div className={`width-full flex center`}>
-						<Image src={blue_car.src} height={50} width={50} alt="Blue car" />
+						<div className={`icon-container`}>
+							<Image src={blue_car.src} fill alt="Blue car" />
+						</div>
 						<h2
 							className={`uppercase spaced style-1 thin flex gap-medium center font-large`}
 						>
 							{' '}
 							Rudi&apos;s Rides.
 						</h2>
-						<Image
-							src={flag.src}
-							height={50}
-							width={50}
-							alt="Checkered flag."
-						/>
+						<div className={`icon-container`}>
+							<Image src={flag.src} fill alt="Checkered flag." />
+						</div>
 					</div>
 					<p className={`paragraph center width-half`}>
 						Rudi is here to help you find the ride of your dreams within a
@@ -95,7 +95,9 @@ export default function Home() {
 						Rudi fights for you at {contact.address}, just south of the exit
 						ramps.
 					</p>
-					<Image src={map.src} height={220} width={220} alt="Blue car" />{' '}
+					<div className={`image-container`}>
+						<Image src={map.src} fill alt="Map tile" />{' '}
+					</div>
 					<p className={`paragraph width-full left-align`}>
 						(This can be made interactive once I have my own internet connection
 						- we can have Cartoon Rudi show people around the lot).

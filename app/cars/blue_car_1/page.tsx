@@ -16,7 +16,9 @@ export default function Home() {
 		<ProviderWrapper>
 			<main className={`main center height-full flex column`}>
 				<h1 className={`style-1 uppercase thin`}>Blue Car One.</h1>
-				<Image src={blue_car.src} height={150} width={300} alt="Car Icon" />
+				<div className={`image-container`}>
+					<Image src={blue_car.src} fill alt="Car Icon" />
+				</div>
 				<p className={`paragraph width-full block left-align`}>
 					Blue Car One is a dignified ride.
 				</p>

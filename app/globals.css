@@ -160,6 +160,9 @@ button {
 .z10 {
 	z-index: 10;
 }
+.z15 {
+	z-index: 15;
+}
 .undisplayed {
 	display: none;
 }
@@ -321,6 +324,25 @@ button {
 	padding: 4.5rem 2rem 2rem 2rem;
 	color: var(--color-2);
 }
+.banner-container {
+	z-index: 5;
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+.image-container {
+	z-index: 5;
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+.icon-container {
+	z-index: 5;
+	position: relative;
+	height: 35px;
+	width: 50px;
+}
 .form {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -474,7 +496,7 @@ button {
 	}
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) {
 	.disappear-md {
 		display: none;
 	}
@@ -491,6 +513,9 @@ button {
 	}
 	.width-half {
 		width: 100%;
+	}
+	.image-container {
+		height: 200px;
 	}
 }
 

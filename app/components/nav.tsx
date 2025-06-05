@@ -28,7 +28,7 @@ function NavLink({ href, children }: NavLinkProps) {
 			href={href}
 			id={pathName.toLowerCase()}
 			className={clsx(
-				`style-1 lowercase spaced thin no-deco darken ${theme}`,
+				`style-1 lowercase spaced thin no-deco darken z15 ${theme}`,
 				isActive ? 'darken color-2' : 'color-2'
 			)}
 		>
