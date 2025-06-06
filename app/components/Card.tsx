@@ -13,17 +13,19 @@ type propsType = {
 
 export default function Card(props: propsType) {
 	return (
-		<div className={`flex column center`}>
+		<div className={`flex column center width-half`}>
 			<h1 className={`style-1 uppercase thin`}>
 				{`${props.make} ${props.model}`}.
 			</h1>
 			<div className={`image-container`}>
 				<Image src={props.imageSrc} fill alt="Car Icon" />
 			</div>
-			<p className={`paragraph width-full block left-align`}>
+			<p className={`paragraph width-full block`}>
 				{`${props.make} ${props.model} is a ${props.category}.`}
 			</p>
-			<ul className={`flex column gap-medium left-align width-full no-deco`}>
+			<ul
+				className={`flex column gap-medium width-half left-align no-deco pad-none`}
+			>
 				<li>
 					<strong>Make:</strong> {props.make}
 				</li>

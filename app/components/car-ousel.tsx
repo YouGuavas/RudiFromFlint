@@ -9,7 +9,7 @@ import Card from './Card';
 
 export default function Carousel() {
 	return (
-		<div className={`flex row`}>
+		<div className={`flex row width-full center`}>
 			<Card
 				imageSrc={blue_car.src}
 				model={`Car`}

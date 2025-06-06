@@ -39,10 +39,10 @@ function NavLink({ href, children }: NavLinkProps) {
 export default function Header() {
 	return (
 		<header
-			className={`width-full center py-1 px-1 bg-4 left flex fixed top z10`}
+			className={`width-full center py-1 bg-4 left flex fixed top z10`}
 			id="menu-full"
 		>
-			<ul className={`flex no-deco width-half center between`}>
+			<ul className={`flex no-deco width-full center between`}>
 				<li>
 					<Link
 						className={`style-1 lowercase spaced thin no-deco darken`}
