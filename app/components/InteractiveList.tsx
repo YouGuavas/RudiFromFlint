@@ -1,11 +1,11 @@
-// components/EmailForm.tsx
+// components/InteractiveList.tsx
 'use client';
 
 import { useState } from 'react';
 import { supabase } from '../api/lib/supabase';
 import Link from 'next/link';
 import Image from 'next/image';
-import blue_car from '../../public/logos/blue_car.svg';
+import cars from '../cars/cars.ts';
 
 interface propsType {
 	categories: string[];
@@ -18,6 +18,7 @@ interface routeType {
 }
 
 export default function InteractiveList(props: propsType) {
+	const selected_car = cars[0];
 	const [filter, setFilter] = useState('x');
 	const [links, setLinks] = useState(props.routes);
 	async function handleFilter(e: React.FormEvent, category: string) {
@@ -57,7 +58,7 @@ export default function InteractiveList(props: propsType) {
 								id={name.toLowerCase()}
 							>
 								<Image
-									src={blue_car.src}
+									src={selected_car.src}
 									height={50}
 									width={50}
 									alt="Car Icon"
