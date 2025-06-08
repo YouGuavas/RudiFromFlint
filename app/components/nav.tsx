@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 import car_and_flag from '../../public/logos/car_and_flag.svg';
-import phone_icon from '../../public/logos/phone_icon.svg';
+import contact_icon from '../../public/logos/contact_icon.svg';
 
 import clsx from 'clsx';
 
@@ -51,7 +51,7 @@ export default function Nav() {
 				<li>
 					<NavLink href="/contact">
 						<div className={`icon-container`}>
-							<Image src={phone_icon.src} fill alt="Phone icon" />
+							<Image src={contact_icon.src} fill alt="Contact icon" />
 						</div>
 					</NavLink>
 				</li>
