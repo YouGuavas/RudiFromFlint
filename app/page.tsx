@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import cars from './cars/cars';
+import { cars } from './cars/cars';
 import flag from '../public/logos/flag.svg';
 import map from '../public/logos/map.svg';
 import main_logo from '../public/logos/main_logo.svg';

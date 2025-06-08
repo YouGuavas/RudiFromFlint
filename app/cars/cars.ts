@@ -3,13 +3,13 @@ import red_car from '../../public/cars/red_car.svg';
 import green_car from '../../public/cars/green_car.svg';
 import black_car from '../../public/cars/black_car.svg';
 
-const carData = [
+const cars = [
 	{
 		src: blue_car.src,
 		make: 'Blue',
 		model: 'Car One',
 		year: 1994,
-		mileage: 50000,
+		mileage: 150000,
 		category: 'Dignified Ride',
 	},
 	{
@@ -36,5 +36,14 @@ const carData = [
 		mileage: 180000,
 		category: 'Dignified Ride',
 	},
+	{
+		src: blue_car.src,
+		make: 'Blue',
+		model: 'Car Two',
+		year: 2024,
+		mileage: 50000,
+		category: 'Dignified Ride',
+	},
 ];
-export default carData;
+const filters = [{ category: 'Blue', models: [cars[0], cars[5]] }];
+export { cars, filters };

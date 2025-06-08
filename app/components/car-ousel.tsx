@@ -1,25 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import cars from '../cars/cars.ts';
+import { cars, filters } from '../cars/cars.ts';
 
 import Card from './Card';
+import InteractiveList from './InteractiveList.tsx';
 
 export default function Carousel() {
 	return (
-		<div className={`flex row width-full center`}>
-			{cars.map((car) => {
-				return (
-					<Card
-						imageSrc={car.src}
-						model={car.model}
-						make={car.make}
-						category={car.category}
-						year={car.year}
-						mileage={car.mileage}
-					/>
-				);
-			})}
-			{/*
+		<>
+			<InteractiveList categories={filters} />
+			<div className={`flex row width-full center`}>
+				{cars.map((car) => {
+					return (
+						<Card
+							imageSrc={car.src}
+							model={car.model}
+							make={car.make}
+							category={car.category}
+							year={car.year}
+							mileage={car.mileage}
+						/>
+					);
+				})}
+				{/*
 			
 			<Card
 				imageSrc={red_car.src}
@@ -45,6 +48,7 @@ export default function Carousel() {
 				year={2002}
 				mileage={170000}
 			/>*/}
-		</div>
+			</div>
+		</>
 	);
 }
