@@ -7,9 +7,9 @@ import InteractiveList from './InteractiveList.tsx';
 
 export default function Carousel() {
 	return (
-		<>
+		<div className={`flex column center`}>
 			<InteractiveList categories={filters} />
-			<div className={`flex row width-full center`}>
+			<div className={`flex row width-full left-align`}>
 				{cars.map((car) => {
 					return (
 						<Card
@@ -49,6 +49,6 @@ export default function Carousel() {
 				mileage={170000}
 			/>*/}
 			</div>
-		</>
+		</div>
 	);
 }

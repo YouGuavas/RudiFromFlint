@@ -60,8 +60,16 @@ export default function Home() {
 					that makes sense for you. All credit? All day. No credit? No problem.
 				</p>
 				<Carousel />
-				<p className={`paragraph center width-half`}>
-					TODO: Adjust layouts, edit content, convert car selector tool.
+			</section>
+			<section className={`flex width-half`}>
+				<h2
+					className={`uppercase spaced style-1 thin center font-large width-full`}
+				>
+					About Champion.
+				</h2>
+				<p className={`paragraph left-align`}>
+					Champion Auto Sales is a buy here, pay here lot, where you can find
+					the used car that&apos;s right for you.
 				</p>
 			</section>
 

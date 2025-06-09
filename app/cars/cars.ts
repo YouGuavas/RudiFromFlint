@@ -45,5 +45,8 @@ const cars = [
 		category: 'Dignified Ride',
 	},
 ];
-const filters = [{ category: 'Blue', models: [cars[0], cars[5]] }];
+const filters = [
+	{ category: 'Blue', models: [cars[0], cars[5]] },
+	{ category: 'x', models: [] },
+];
 export { cars, filters };
