@@ -89,7 +89,7 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 60vh;
+	min-height: 90vh;
 	min-width: 90vw;
 }
 /* Rudi */
@@ -477,6 +477,9 @@ button {
 }
 
 @media (max-width: 850px) {
+	.hero {
+		min-height: 60vh;
+	}
 	.disappear-md {
 		display: none;
 	}
