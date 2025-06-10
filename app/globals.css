@@ -474,6 +474,10 @@ button {
 	.hero {
 		min-height: 20vh;
 	}
+	.banner-container {
+		height: 200px;
+		width: 200px;
+	}
 }
 
 @media (max-width: 850px) {
