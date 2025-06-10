@@ -4,6 +4,7 @@ import { cars } from './cars/cars';
 import flag from '../public/logos/flag.svg';
 import map from '../public/logos/map.svg';
 import main_logo from '../public/logos/main_logo.svg';
+import lot_photo_1 from '../public/photos/lot_photo_1.png';
 
 import contact from './contact.json';
 
@@ -26,7 +27,7 @@ export default function Home() {
 		<main className={`main flex width-full gap-small px-1`}>
 			<section className={`flex column center width-full`}>
 				<h1 className={`undisplayed`}>Champion Auto Sales</h1>
-				<div className={`banner-container`}>
+				<div className={`banner-container z5 centered`}>
 					<Image
 						src={main_logo.src}
 						fill
@@ -34,15 +35,38 @@ export default function Home() {
 						alt="Car and flag"
 					/>
 				</div>
-				<ul className={`flex no-deco gap-medium center`}>
-					<li>{contact.phone}</li>
-					<li>{contact.email}</li>
-					<li className={`width-full`}>{contact.address}</li>
+				<div className={`hero center`}></div>
+				<ul className={`flex z5 no-deco gap-medium center`}>
+					<li>
+						<Link
+							className={`no-deco style-1 spaced lowercase`}
+							href={`tel:+${contact.phone}`}
+						>
+							{contact.phone}
+						</Link>
+					</li>
+					<li>
+						<Link
+							className={`no-deco style-1 spaced lowercase`}
+							href={`mailto:${contact.email}`}
+						>
+							{contact.email}
+						</Link>
+					</li>
+					<li className={`width-full`}>
+						<Link
+							href="https://maps.app.goo.gl/UeGNSBdcxHJahoNK6"
+							className={`no-deco style-1 spaced`}
+						>
+							{contact.address}
+						</Link>
+					</li>
 				</ul>
 			</section>
-			<section className={`flex center width-full `}>
+
+			<section className={`flex center width-full column`}>
 				<div className={`width-full flex center gap-small`}>
-					<div className={`icon-container`}>
+					<div className={`icon-container z5`}>
 						<Image src={selected_car.src} fill alt="Blue car" />
 					</div>
 					<h2
@@ -51,7 +75,7 @@ export default function Home() {
 						{' '}
 						Rudi&apos;s Rides.
 					</h2>
-					<div className={`icon-container`}>
+					<div className={`icon-container z5`}>
 						<Image src={flag.src} fill alt="Checkered flag." />
 					</div>
 				</div>
@@ -59,8 +83,45 @@ export default function Home() {
 					Rudi is here to help you find the ride of your dreams within a budget
 					that makes sense for you. All credit? All day. No credit? No problem.
 				</p>
+				<p className={`paragraph center width-half`}>
+					Drive Away Today with Guaranteed Financing —{' '}
+					<Link
+						className={`no-deco style-1`}
+						href="https://www.wefinanceeveryone.com/"
+					>
+						Champion Auto Sales
+					</Link>
+					, Mt. Morris, MI.
+				</p>
 				<Carousel />
 			</section>
+
+			<section className={`flex width-half`}>
+				<h2
+					className={`uppercase spaced style-1 thin center font-large width-full`}
+				>
+					What Rudi Does.
+				</h2>
+				<p className={`paragraph left-align`}>
+					Rudi serves the greater Flint area, providing high-quality used autos
+					at an affordable rate. He fights hard for you on your quest for a
+					dignified daily driver.
+				</p>
+				<p className={`paragraph left-align`}>
+					Rudi fights for your right to a decent driver despite any credit
+					concerns. Based at{' '}
+					<Link
+						className={`no-deco style-1`}
+						href="https://www.wefinanceeveryone.com/"
+					>
+						Champion Auto Sales
+					</Link>
+					, in Mt. Morris, Michigan - where motorists can find on-lot, buy
+					here/pay here, and financing options - Rudi knows &quot;reliable&quot;
+					when he sees it. You will, too, when you see Rudi fighting for you.
+				</p>
+			</section>
+
 			<section className={`flex width-half`}>
 				<h2
 					className={`uppercase spaced style-1 thin center font-large width-full`}
@@ -68,8 +129,14 @@ export default function Home() {
 					About Champion.
 				</h2>
 				<p className={`paragraph left-align`}>
-					Champion Auto Sales is a buy here, pay here lot, where you can find
-					the used car that&apos;s right for you.
+					<Link
+						className={`no-deco style-1`}
+						href="https://www.wefinanceeveryone.com/"
+					>
+						Champion Auto Sales
+					</Link>{' '}
+					is a buy here, pay here lot, where you can find the used car
+					that&apos;s right for you.
 				</p>
 			</section>
 
@@ -96,13 +163,19 @@ export default function Home() {
 
 			<section className={`flex width-half center`}>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					Where is Rudi.
+					Where to Find Rudi.
 				</h2>
 				<p className={`paragraph width-full left-align`}>
-					Rudi fights for you at {contact.address}, just south of the exit
-					ramps.
+					Rudi fights for you at{' '}
+					<Link
+						href="https://maps.app.goo.gl/UeGNSBdcxHJahoNK6"
+						className={`no-deco style-1 spaced`}
+					>
+						{contact.address}
+					</Link>
+					, just south of the exit ramps.
 				</p>
-				<div className={`image-container`}>
+				<div className={`image-container z5`}>
 					<Image src={map.src} fill alt="Map tile" />{' '}
 				</div>
 				<p className={`paragraph width-full left-align`}>
@@ -137,8 +210,13 @@ export default function Home() {
 					<li
 						className={`no-deco width-full flex column left-align font-medium`}
 					>
-						Dignified Smile
+						Dignified Drive
 					</li>{' '}
+					<li
+						className={`no-deco width-full flex column left-align font-medium`}
+					>
+						Buy Here, Pay Here
+					</li>
 				</ul>
 				<p className={`paragraph width-full left-align`}>
 					Get yourself a reliable used auto with Rudi.

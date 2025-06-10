@@ -83,6 +83,17 @@ body {
 }
 /* /shapes */
 
+/* Rudi */
+.hero {
+	background: url('../public/photos/lot_photo_1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 550px;
+	min-width: 650px;
+}
+/* Rudi */
+
 .main-wrapper,
 .alt-wrapper {
 	min-width: 45vw;
@@ -115,6 +126,9 @@ button {
 .absolute-center {
 	top: 50%;
 	left: 45%;
+}
+.z5 {
+	z-index: 5;
 }
 .z10 {
 	z-index: 10;
@@ -283,21 +297,19 @@ button {
 	padding: 4.5rem 0;
 	color: var(--color-2);
 }
+
 .banner-container {
-	z-index: 5;
 	position: relative;
 	width: 300px;
 	height: 300px;
 }
 
 .image-container {
-	z-index: 5;
 	position: relative;
 	width: 300px;
 	height: 300px;
 }
 .icon-container {
-	z-index: 5;
 	position: relative;
 	height: 35px;
 	width: 50px;
@@ -334,6 +346,10 @@ button {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+}
+
+.centered {
+	margin: 0 auto;
 }
 /* /layout */
 
