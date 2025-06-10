@@ -472,13 +472,13 @@ button {
 }
 @media (max-width: 450px) {
 	.hero {
-		min-height: 40vh;
+		min-height: 20vh;
 	}
 }
 
 @media (max-width: 850px) {
 	.hero {
-		min-height: 60vh;
+		min-height: 50vh;
 	}
 	.disappear-md {
 		display: none;
