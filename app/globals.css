@@ -470,6 +470,11 @@ button {
 		font-size: 2rem;
 	}
 }
+@media (max-width: 450px) {
+	.hero {
+		min-height: 40vh;
+	}
+}
 
 @media (max-width: 850px) {
 	.disappear-md {
