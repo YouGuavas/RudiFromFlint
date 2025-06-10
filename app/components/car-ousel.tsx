@@ -13,6 +13,7 @@ export default function Carousel() {
 				{cars.map((car) => {
 					return (
 						<Card
+							key={car.mileage + car.model}
 							imageSrc={car.src}
 							model={car.model}
 							make={car.make}

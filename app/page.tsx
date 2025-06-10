@@ -4,7 +4,6 @@ import { cars } from './cars/cars';
 import flag from '../public/logos/flag.svg';
 import map from '../public/logos/map.svg';
 import main_logo from '../public/logos/main_logo.svg';
-import lot_photo_1 from '../public/photos/lot_photo_1.png';
 
 import contact from './contact.json';
 
