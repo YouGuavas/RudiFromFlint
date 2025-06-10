@@ -86,7 +86,7 @@ body {
 /* Rudi */
 .hero {
 	background: url('../public/photos/lot_photo_1.png');
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 100vh;
