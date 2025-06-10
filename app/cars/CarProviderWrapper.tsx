@@ -1,8 +1,8 @@
 'use client';
 
-import { Provider } from './theme/ThemeContext';
+import { Provider } from './CarContext';
 
-export function ThemeProviderWrapper({
+export function CarProviderWrapper({
 	children,
 }: {
 	children: React.ReactNode;

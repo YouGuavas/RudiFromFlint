@@ -2,18 +2,12 @@
 'use client';
 
 import { useState } from 'react';
-import { supabase } from '../api/lib/supabase';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cars, filters } from '../cars/cars.ts';
 
 interface propsType {
 	categories: Object;
-}
-interface routeType {
-	name: string;
-	path: string;
-	tags: string[];
 }
 
 export default function InteractiveList(props: propsType) {
