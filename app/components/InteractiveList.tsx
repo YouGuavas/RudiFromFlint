@@ -20,7 +20,7 @@ export default function InteractiveList(props: propsType) {
 
 	return (
 		<>
-			<h3 className={`style-1 thin uppercase spaced`}>Filters: </h3>
+			<h3 className={`style-1 thin uppercase spaced`}>Filter: </h3>
 			<ul className={`flex gap-medium no-deco pad-none width-full center`}>
 				{filters.map((filter) => (
 					<li
