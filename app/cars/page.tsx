@@ -5,7 +5,6 @@ import InteractiveList from '../components/InteractiveList';
 import type { Metadata } from 'next';
 
 import styles from '../page.module.css';
-import { ProviderWrapper } from '../ThemeProviderWrapper';
 
 export const metadata: Metadata = {
 	title: 'Rudi | Cars',
@@ -14,14 +13,12 @@ export const metadata: Metadata = {
 };
 export default function Home() {
 	return (
-		<ProviderWrapper>
-			<main className={`main center height-full flex column`}>
-				<h1 className={`style-1 uppercase thin`}>See Rudi&apos;s cars.</h1>
+		<main className={`main center height-full flex column`}>
+			<h1 className={`style-1 uppercase thin`}>See Rudi&apos;s cars.</h1>
 
-				<InteractiveList categories={categories} routes={routes} />
+			<InteractiveList categories={categories} routes={routes} />
 
-				<p className={`paragraph width-full block`}></p>
-			</main>
-		</ProviderWrapper>
+			<p className={`paragraph width-full block`}></p>
+		</main>
 	);
 }
