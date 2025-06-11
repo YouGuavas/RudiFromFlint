@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { cars, filters } from '../cars/cars.ts';
@@ -6,22 +8,24 @@ import InteractiveList from './InteractiveList.tsx';
 import { useState } from 'react';
 
 export default function Carousel() {
+	const [filter, setFilter] = useState('green');
 	return (
 		<div className={`flex column center`}>
-			<InteractiveList categories={filters} />
+			<InteractiveList />
 			<div className={`flex row width-full left-align`}>
-				{cars.map((car) => {
-					return (
-						<Card
-							key={car.mileage + car.model}
+				{Object.keys(cars).map((make, index) => {
+					if (make.toLowerCase === filter.toLowerCase) {
+						return make;
+					}
+					/*<Card
+							key={make + index}
 							imageSrc={car.src}
 							model={car.model}
 							make={car.make}
 							category={car.category}
 							year={car.year}
 							mileage={car.mileage}
-						/>
-					);
+						/>*/
 				})}
 			</div>
 		</div>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-	const selected_car = cars[0];
+	const selected_car = cars.Blue[0];
 	return (
 		<main className={`main flex width-full gap-small px-1`}>
 			<section className={`flex column center width-full`}>
@@ -102,9 +102,9 @@ export default function Home() {
 					What Rudi Does.
 				</h2>
 				<p className={`paragraph left-align`}>
-					Rudi serves the greater Flint area, providing high-quality used autos
-					at an affordable rate. He fights hard for you on your quest for a
-					dignified daily driver.
+					Operating out of Mt. Morris, Michigan, Rudi serves the greater Flint
+					area, providing high-quality used autos at an affordable rate. He
+					fights hard for you on your quest for a dignified daily driver.
 				</p>
 				<p className={`paragraph left-align`}>
 					Rudi fights for your right to a decent driver despite any credit

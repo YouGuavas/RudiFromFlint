@@ -4,14 +4,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { cars, filters } from '../cars/cars.ts';
+import { filters } from '../cars/cars.ts';
 
-interface propsType {
-	categories: Object;
-}
-
-export default function InteractiveList(props: propsType) {
-	const selected_cars = cars[0];
+export default function InteractiveList() {
 	const [currentFilter, setCurrentFilter] = useState('x');
 	async function handleFilter(e: React.FormEvent, category: string) {
 		setCurrentFilter(category.toLowerCase());
@@ -26,13 +21,13 @@ export default function InteractiveList(props: propsType) {
 					<li
 						key={`${filter}`}
 						className={`${
-							currentFilter.toLowerCase() === filter.category.toLowerCase()
+							currentFilter.toLowerCase() === filter.toLowerCase()
 								? 'active'
 								: ''
 						} no-deco lowercase style-1 spaced color-2 rounded darken px-1 py-1 pointer`}
-						onClick={(e) => handleFilter(e, filter.category)}
+						onClick={(e) => handleFilter(e, filter)}
 					>
-						{filter.category}
+						{filter}
 					</li>
 				))}
 			</ul>
