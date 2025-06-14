@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 export default function Home() {
 	const selected_car = cars.Blue[0];
 	return (
-		<main className={`main flex width-full gap-small px-1`}>
-			<section className={`flex column center width-full`}>
+		<main className={`main flex row width-full center`}>
+			<section className={`flex column center width-full px-1 py-1`}>
 				<h1 className={`undisplayed`}>Champion Auto Sales</h1>
 				<div className={`banner-container z5 centered`}>
 					<Image
@@ -63,7 +63,7 @@ export default function Home() {
 				</ul>
 			</section>
 
-			<section className={`flex center width-full column`}>
+			<section className={`flex center width-full column px-1 py-1`}>
 				<div className={`width-full flex center gap-small`}>
 					<div className={`icon-container z5`}>
 						<Image src={selected_car.src} fill alt="Blue car" />
@@ -95,7 +95,32 @@ export default function Home() {
 				<Carousel />
 			</section>
 
-			<section className={`flex width-half`}>
+			<section className={`flex width-half px-1 py-1`}>
+				<h2
+					className={`uppercase spaced style-1 thin center font-large width-full`}
+				>
+					Buy Here, Pay Here.
+				</h2>
+				<p className={`paragraph left-align`}>
+					<Link
+						className={`no-deco style-1`}
+						href="https://www.wefinanceeveryone.com/"
+					>
+						Champion Auto Sales
+					</Link>{' '}
+					is a buy here, pay here used auto lot. That means you can walk onto
+					the lot on foot, and drive off in a new ride!
+				</p>
+				<p className={`paragraph left-align`}>
+					With financing options for everyone, and a Champion fighting on your
+					side, you&apos;re already in a winning position.
+				</p>
+				<p className={`paragraph left-align`}>
+					(Ask Rudi about APR, rates, repossession timelines, etc - for
+					transparency and ethicality)
+				</p>
+			</section>
+			<section className={`flex width-half px-1 py-1`}>
 				<h2
 					className={`uppercase spaced style-1 thin center font-large width-full`}
 				>
@@ -121,25 +146,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className={`flex width-half`}>
-				<h2
-					className={`uppercase spaced style-1 thin center font-large width-full`}
-				>
-					About Champion.
-				</h2>
-				<p className={`paragraph left-align`}>
-					<Link
-						className={`no-deco style-1`}
-						href="https://www.wefinanceeveryone.com/"
-					>
-						Champion Auto Sales
-					</Link>{' '}
-					is a buy here, pay here lot, where you can find the used car
-					that&apos;s right for you.
-				</p>
-			</section>
-
-			<section className={`flex width-half`}>
+			<section className={`flex width-half px-1 py-1`}>
 				<h2
 					className={`uppercase spaced style-1 thin center font-large width-full`}
 				>
@@ -160,7 +167,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className={`flex width-half center`}>
+			<section className={`flex width-half center px-1 py-1`}>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					Where to Find Rudi.
 				</h2>
@@ -186,43 +193,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className={`flex width-half`}>
-				<h2 className={`uppercase spaced style-1 thin font-large`}>
-					How to roll like a king.
-				</h2>
-				<p className={`paragraph width-full left-align`}>
-					Let Rudi fight for you at Champion Auto Sales in Mount Morris,
-					Michigan, where all credit is approved and everyone can find dignified
-					financing fit for a King, a Queen, or Anyone In Between.
-				</p>
-				<ul className={`no-deco flex column gap-small width-full`}>
-					<li
-						className={`no-deco width-full flex column left-align font-medium`}
-					>
-						Reliable Ride
-					</li>{' '}
-					<li
-						className={`no-deco width-full flex column left-align font-medium`}
-					>
-						Guaranteed Financing
-					</li>{' '}
-					<li
-						className={`no-deco width-full flex column left-align font-medium`}
-					>
-						Dignified Drive
-					</li>{' '}
-					<li
-						className={`no-deco width-full flex column left-align font-medium`}
-					>
-						Buy Here, Pay Here
-					</li>
-				</ul>
-				<p className={`paragraph width-full left-align`}>
-					Get yourself a reliable used auto with Rudi.
-				</p>
-			</section>
-
-			<section className={`flex width-full center`}>
+			<section className={`flex width-full center px-1 py-1`}>
 				<h2 className={`uppercase spaced style-1 thin font-large`}>
 					How to join your champion.
 				</h2>{' '}
