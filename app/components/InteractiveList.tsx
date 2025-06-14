@@ -6,13 +6,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { filters } from '../cars/cars.ts';
 
-export default function InteractiveList() {
-	const [currentFilter, setCurrentFilter] = useState('x');
-	async function handleFilter(e: React.FormEvent, category: string) {
-		setCurrentFilter(category.toLowerCase());
-		return currentFilter;
-	}
+type propsType = {
+	currentFilter: string;
+	handleFilter: Function;
+};
 
+export default function InteractiveList(props: propsType) {
 	return (
 		<>
 			<h3 className={`style-1 thin uppercase spaced`}>Filter: </h3>
@@ -21,11 +20,11 @@ export default function InteractiveList() {
 					<li
 						key={`${filter}`}
 						className={`${
-							currentFilter.toLowerCase() === filter.toLowerCase()
+							props.currentFilter.toLowerCase() === filter.toLowerCase()
 								? 'active'
 								: ''
 						} no-deco lowercase style-1 spaced color-2 rounded darken px-1 py-1 pointer`}
-						onClick={(e) => handleFilter(e, filter)}
+						onClick={(e) => props.handleFilter(e, filter)}
 					>
 						{filter}
 					</li>

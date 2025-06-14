@@ -13,10 +13,10 @@ type propsType = {
 
 export default function Card(props: propsType) {
 	return (
-		<div className={`flex column center width-half`}>
-			<h1 className={`style-1 uppercase thin`}>
+		<div className={`flex column center width-half left-align`}>
+			<h3 className={`style-1 uppercase thin`}>
 				{`${props.make} ${props.model}`}.
-			</h1>
+			</h3>
 			<div className={`image-container`}>
 				<Image src={props.imageSrc} fill alt="Car Icon" />
 			</div>

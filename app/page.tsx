@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-	const selected_car = cars.Blue[0];
+	const selected_car = cars[0];
 	return (
 		<main className={`main flex row width-full center`}>
 			<section className={`flex column center width-full px-1 py-1`}>

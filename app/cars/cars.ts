@@ -3,35 +3,44 @@ import red_car from '../../public/cars/red_car.svg';
 import green_car from '../../public/cars/green_car.svg';
 import black_car from '../../public/cars/black_car.svg';
 
-const cars = {
-	Blue: [
-		{
-			src: blue_car.src,
-			model: 'Car One',
-			year: 1994,
-			mileage: 150000,
-			category: 'Dignified Ride',
-		},
-		{
-			src: blue_car.src,
-			model: 'Car Two',
-			year: 2024,
-			mileage: 50000,
-			category: 'Dignified Ride',
-		},
-	],
-	Green: [
-		{
-			src: green_car.src,
-			model: 'Car One',
-			year: 2011,
-			mileage: 180000,
-			category: 'Dignified Ride',
-		},
-	],
+type Car = {
+	make: string;
+
+	src: string;
+	model: string;
+	year: number;
+	mileage: number;
+	category: string;
 };
 
-/*{
+const cars: Car[] = [
+	{
+		make: 'Blue',
+		src: blue_car.src,
+		model: 'Car One',
+		year: 1994,
+		mileage: 150000,
+		category: 'Dignified Ride',
+	},
+	{
+		make: 'Blue',
+
+		src: blue_car.src,
+		model: 'Car Two',
+		year: 2024,
+		mileage: 50000,
+		category: 'Dignified Ride',
+	},
+	{
+		make: 'Green',
+
+		src: green_car.src,
+		model: 'Car One',
+		year: 2011,
+		mileage: 180000,
+		category: 'Dignified Ride',
+	},
+	{
 		src: red_car.src,
 		make: 'Red',
 		model: 'Car One',
@@ -47,14 +56,7 @@ const cars = {
 		mileage: 170000,
 		category: 'Dignified Ride',
 	},
-	{
-		src: green_car.src,
-		make: 'Green',
-		model: 'Car One',
-		year: 2011,
-		mileage: 180000,
-		category: 'Dignified Ride',
-	},*/
+];
 
-const filters = ['Blue', 'Green', 'X'];
+const filters = ['Blue', 'Green', 'Red', 'Black', 'X'];
 export { cars, filters };
