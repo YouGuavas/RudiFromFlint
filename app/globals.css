@@ -309,6 +309,11 @@ button {
 	width: 300px;
 	height: 300px;
 }
+.map-container {
+	position: relative;
+	height: 450px;
+	width: 450px;
+}
 .icon-container {
 	position: relative;
 	height: 35px;
@@ -480,6 +485,10 @@ button {
 	.banner-container {
 		height: 200px;
 		width: 200px;
+	}
+	.map-container {
+		height: 350px;
+		width: 350px;
 	}
 	.hero {
 		min-height: 60vh;

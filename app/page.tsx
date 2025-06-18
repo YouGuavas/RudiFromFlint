@@ -181,8 +181,8 @@ export default function Home() {
 					</Link>
 					, just south of the exit ramps.
 				</p>
-				<div className={`image-container z5`}>
-					<Image src={map.src} fill alt="Map tile" />{' '}
+				<div className={`map-container z5 left-align`}>
+					<Image className={`left-align`} src={map.src} fill alt="Map tile" />{' '}
 				</div>
 				<p className={`paragraph width-full left-align`}>
 					(This can be made interactive once I have my own internet connection -

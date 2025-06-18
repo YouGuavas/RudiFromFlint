@@ -30,6 +30,7 @@ export default function Carousel() {
 					if (filter.toLowerCase() === 'x') {
 						return (
 							<Card
+								key={index}
 								make={car.make}
 								model={car.model}
 								imageSrc={car.src}
@@ -42,6 +43,7 @@ export default function Carousel() {
 					if (car.make.toLowerCase() === filter.toLowerCase()) {
 						return (
 							<Card
+								key={index}
 								make={car.make}
 								model={car.model}
 								imageSrc={car.src}
